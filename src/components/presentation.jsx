@@ -1,10 +1,10 @@
 import React from 'react';
-import {useParams} from "react-router-dom";
 
 
 
-function HSL() {
-    let { h, s, l } = useParams();
+
+function Presentation() {
+
     const styles = {};
     let myRef = React.createRef();
 
@@ -29,12 +29,13 @@ function HSL() {
         style={{
           ...styles.fill,
           ...styles.hsl,
-          background: `hsl(${h}, ${s}%, ${l}%)`
+          background: `hsl(10, 90%, 50%)`
         }}
       >
-        hsl({h}, {s}%, {l}%)
+        <h1>Verónica Tobias</h1>
+        <h2>Frontend Developer</h2>
       </div>
     );
   }
 
-export default HSL;
+export default Presentation;

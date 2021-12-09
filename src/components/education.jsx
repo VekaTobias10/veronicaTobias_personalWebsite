@@ -1,5 +1,4 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'
 
 
 const styles = {};
@@ -13,7 +12,7 @@ styles.fill = {
 };
 
 
-styles.rgb = {
+styles.hsl = {
     ...styles.fill,
     color: "white",
     paddingTop: "20px",
@@ -21,20 +20,19 @@ styles.rgb = {
   };
 
 
-function RGB() {
-    let { r, g, b } = useParams();
+function Education() {
   
     return (
       <div
         style={{
           ...styles.fill,
-          ...styles.rgb,
-          background: `rgb(${r}, ${g}, ${b})`
+          ...styles.hsl,
+          background: `hsl(120,100%,40%)`
         }}
       >
-        rgb({r}, {g}, {b})
+        <h1>FORMACIÓN</h1>
       </div>
     );
   }
 
-export default RGB;
+export default Education;
