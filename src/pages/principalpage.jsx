@@ -1,6 +1,8 @@
 import React from "react";
-import RGB from '../components/rgb';
-import HSL from '../components/hsl';
+import Education from '../components/education';
+import Presentation from '../components/presentation';
+import Contact from '../components/contact';
+import Projects from '../components/projects';
 import NavLink from "../components/nav";
 import {
   TransitionGroup,
@@ -45,10 +47,10 @@ function PrincipalPage() {
     return (
       <div style={styles.fill}>
         <ul style={styles.nav}>
-          <NavLink to="/hsl/10/90/50">Red</NavLink>
-          <NavLink to="/hsl/120/100/40">Green</NavLink>
-          <NavLink to="/rgb/33/150/243">Blue</NavLink>
-          <NavLink to="/rgb/240/98/146">Pink</NavLink>
+          <NavLink to="/veronicatobias">¿Quien soy?</NavLink>
+          <NavLink to="/formacion">Formación</NavLink>
+          <NavLink to="/proyectos">Proyectos</NavLink>
+          <NavLink to="/rgb/240/98/146">Contáctame!</NavLink>
         </ul>
   
         <div style={styles.content}>
@@ -59,8 +61,10 @@ function PrincipalPage() {
               timeout={600}
             >
               <Switch location={location}>
-                <Route path="/hsl/:h/:s/:l" children={<HSL />}/>
-                <Route path="/rgb/:r/:g/:b" children={<RGB />}/>
+                <Route path="/veronicatobias" children={<Presentation />}/>
+                <Route path="/formacion" children={<Education />}/>
+                <Route path="/proyectos" children={<Projects />}/>
+                <Route path="/rgb/:r/:g/:b" children={<Contact />}/>
               </Switch>
             </CSSTransition>
           </TransitionGroup>
