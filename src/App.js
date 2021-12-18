@@ -13,7 +13,7 @@ function App() {
 <Router>
       <Switch>
         <Route exact path="/">
-          <Redirect to="/hsl/10/90/50" />
+          <Redirect to="/veronicatobias" />
         </Route>
         <Route path="*">
           < PrincipalPage />
