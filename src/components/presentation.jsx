@@ -1,6 +1,6 @@
 import React from 'react';
-
-
+import veronica from '../assets/img/veronica-tobias-img.jpg';
+import './presentationStyle.css';
 
 
 function Presentation() {
@@ -29,11 +29,14 @@ function Presentation() {
         style={{
           ...styles.fill,
           ...styles.hsl,
-          background: `hsl(10, 90%, 50%)`
+          background: 'black',
+          color: 'white'
         }}
       >
+        <img className='img-principal' src={veronica} alt='img-veronica-tobias'></img>
         <h1>Verónica Tobias</h1>
-        <h2>Frontend Developer</h2>
+        <h4>Frontend Developer</h4>
+        
       </div>
     );
   }

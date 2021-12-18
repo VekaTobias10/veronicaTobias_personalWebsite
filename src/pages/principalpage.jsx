@@ -47,10 +47,10 @@ function PrincipalPage() {
     return (
       <div style={styles.fill}>
         <ul style={styles.nav}>
-          <NavLink to="/veronicatobias">¿Quien soy?</NavLink>
+          <NavLink to="/veronicatobias">Inicio</NavLink>
           <NavLink to="/formacion">Formación</NavLink>
           <NavLink to="/proyectos">Proyectos</NavLink>
-          <NavLink to="/rgb/240/98/146">Contáctame!</NavLink>
+          <NavLink to="/contacto">Contáctame!</NavLink>
         </ul>
   
         <div style={styles.content}>
@@ -64,7 +64,7 @@ function PrincipalPage() {
                 <Route path="/veronicatobias" children={<Presentation />}/>
                 <Route path="/formacion" children={<Education />}/>
                 <Route path="/proyectos" children={<Projects />}/>
-                <Route path="/rgb/:r/:g/:b" children={<Contact />}/>
+                <Route path="/contacto" children={<Contact />}/>
               </Switch>
             </CSSTransition>
           </TransitionGroup>

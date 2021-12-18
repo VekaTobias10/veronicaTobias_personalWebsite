@@ -9,7 +9,9 @@ styles.navItem = {
     textAlign: "center",
     flex: 1,
     listStyleType: "none",
-    padding: "10px"
+    textDecoration: "none",
+    padding: "10px",
+    fontSize: "20px"
   };
   
 
