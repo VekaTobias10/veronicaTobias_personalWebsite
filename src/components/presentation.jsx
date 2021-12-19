@@ -1,5 +1,6 @@
 import React from 'react';
 import veronica from '../assets/img/veronica-tobias-img.jpg';
+import { Link } from 'react-router-dom';
 import './presentationStyle.css';
 
 
@@ -36,7 +37,7 @@ function Presentation() {
         <img className='img-principal' src={veronica} alt='img-veronica-tobias'></img>
         <h1>Verónica Tobias</h1>
         <h4>Frontend Developer</h4>
-        
+        <Link to='/veronica_tobias_cv.pdf' target="_blank" download>Download</Link>
       </div>
     );
   }

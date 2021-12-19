@@ -32,6 +32,7 @@ function Contact() {
         }}
       >
         <h1>Contáctame!</h1>
+        
       </div>
     );
   }
